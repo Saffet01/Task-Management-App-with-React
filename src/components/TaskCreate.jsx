@@ -44,7 +44,7 @@ function TaskCreate({OnCreateProps}) {
           cols="30"
           rows="10"
         ></textarea>
-        <button onClick={handleSubmit}>Create</button>
+        <button onClick={handleSubmit} className="create-btn">Create</button>
       </form>
     </div>
   );

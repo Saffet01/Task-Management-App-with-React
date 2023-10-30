@@ -11,6 +11,7 @@
   width: 450px;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 label{
@@ -33,6 +34,10 @@ textarea{
   padding: 10px;
 }
 
+.tasks-title{
+  margin-top: 100px;
+}
+
 button{
   margin-top: 20px;
   height: 40px;
@@ -46,5 +51,52 @@ button:hover{
 }
 
 button:active{
+  scale: 0.9;
+}
+
+.create-btn:hover{
+  background-color: rgb(102, 190, 102);
+}
+
+.task-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.task-card{
+  border: 1px solid gray;
+  margin: 10px 10px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-width: 240px;
+}
+
+.task-card-desc{
+  /* width: 150px; */
+}
+
+.task-card-btn-area{
+  width: 100%;
+}
+
+.task-card-btn{
+  width: 45%;
+  margin: 0 6px;
+}
+
+.delete-btn:hover{
+  background-color: rgb(249, 135, 135);
+  color: white;
+  scale: 0.9;
+}
+
+.update-status-btn:hover{
+  background-color: rgb(98, 98, 185);
+  color: white;
   scale: 0.9;
 }
