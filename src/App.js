@@ -27,11 +27,24 @@ function App() {
     setTasks(afterDeletingTasks);
   }
 
+  const editTaskById = (id, updatedTitle, updatedDescription) => {
+    const updatedTasks = tasks.map((task) => {
+      if(task.id === id){
+        return {
+          id:id, title: updatedTitle, taskDesc: updatedDescription
+        }
+      }else{
+        return task;
+      }
+    })
+    setTasks(updatedTasks);
+  }
+
   return (
     <div className="App">
       <TaskCreate OnCreateProps={createTask}/>
       <h2 className='tasks-title'>Tasks</h2>
-      <TaskList tasks={tasks} onDelete={deleteTaskById}/>
+      <TaskList tasks={tasks} onDelete={deleteTaskById} onUpdate={editTaskById}/>
     </div>
   );
 }
