@@ -3,12 +3,14 @@
 
 ### Json server 
 => to create base database to store all task information, still appears even if page is refreshed. (https://www.npmjs.com/package/json-server)
+
 Installing json server;
 npm install -g json-server 
 
 
 ###Axios 
 => used to fetch data from json server.
+
 Installing Axios;
 npm install axios
 
