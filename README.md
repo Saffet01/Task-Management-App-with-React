@@ -8,7 +8,7 @@ Installing json server;
 npm install -g json-server 
 
 
-###Axios 
+### Axios 
 => used to fetch data from json server.
 
 Installing Axios;
