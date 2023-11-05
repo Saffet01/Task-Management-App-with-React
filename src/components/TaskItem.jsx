@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TaskCreate from "./TaskCreate";
 
 function TaskItem({ task, onDelete, onUpdate }) {
-  console.log(task);
+  // console.log(task);
 
   const handleDeleteClick = () => {
     onDelete(task.id);

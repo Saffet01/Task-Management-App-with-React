@@ -6,14 +6,14 @@ function TaskCreate({ OnCreateProps, task, taskFormUpdate, onUpdate }) {
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
-    console.log("title: ", title);
+    // console.log("title: ", title);
   };
 
   const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : "");
 
   const handleTaskDesc = (event) => {
     setTaskDesc(event.target.value);
-    console.log("Task Description: ", taskDesc);
+    // console.log("Task Description: ", taskDesc);
   };
 
   const handleSubmit = (event) => {
